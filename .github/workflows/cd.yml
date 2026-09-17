@@ -43,7 +43,7 @@ jobs:
             --platform linux/amd64 \
             --provenance=false \
             --load \
-            -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+            -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./simple-flask-app
 
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
